@@ -8,10 +8,10 @@ middle_name:
 last_name: Du
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Alexander Du's research in computer systems, compilers, and language models.
+  Alexander Du's academic website: machine learning systems, GPU resource management, and publications.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+keywords: Alexander Du, Duke University, machine learning systems, GPU resource management
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.svg # image in /assets/img/ used as the browser tab icon
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
