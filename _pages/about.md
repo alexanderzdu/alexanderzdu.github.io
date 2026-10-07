@@ -90,6 +90,31 @@ latest_posts:
     gap: 0.3rem;
   }
 
+  #publications {
+    margin-top: 2.5rem;
+  }
+
+  .publications {
+    margin-top: 0.75rem;
+  }
+
+  .publications h2.bibliography {
+    display: none;
+  }
+
+  .publications ol.bibliography {
+    margin-bottom: 0;
+  }
+
+  .publications ol.bibliography li {
+    margin-bottom: 0.65rem;
+  }
+
+  .publications ol.bibliography li .abbr,
+  .publications ol.bibliography li .abbr abbr {
+    margin-bottom: 0;
+  }
+
   .publications .links .bibtex {
     order: -1;
   }
