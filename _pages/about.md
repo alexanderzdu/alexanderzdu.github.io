@@ -27,43 +27,46 @@ latest_posts:
     if (localStorage.getItem("theme") === "system") setThemeSetting("light");
     localStorage.setItem("theme-default-set", "1");
   }
+
+  const page = document.querySelector(".post");
+  const themeButton = document.getElementById("light-toggle");
+  if (page && themeButton) {
+    const themeControl = document.createElement("div");
+    themeControl.className = "page-theme-control";
+    themeControl.appendChild(themeButton);
+    page.prepend(themeControl);
+  }
 </script>
 
 <style>
-  #navbar {
-    background: transparent;
-    box-shadow: none;
-    border: 0;
+  body > header {
+    display: none;
   }
 
-  #navbar .container {
-    justify-content: flex-end;
-  }
-
-  #navbar .navbar-toggler-main,
-  #navbar .nav-item {
-    display: none !important;
-  }
-
-  #navbar .navbar-collapse-main {
-    display: flex !important;
-    flex-basis: auto;
-    justify-content: flex-end;
-  }
-
-  #navbar .navbar-menu-list {
-    flex-direction: row;
-    width: auto;
-    margin-left: auto;
-    align-items: center;
+  body.fixed-top-nav {
+    padding-top: 0;
   }
 
   .post-header .desc:empty {
     display: none;
   }
 
+  .post {
+    position: relative;
+  }
+
   .profile {
     width: min(100%, 185px);
+  }
+
+  .page-theme-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .page-theme-control #light-toggle {
+    transform: none;
   }
 
   .profile .more-info .profile-links {
