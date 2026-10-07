@@ -4,7 +4,7 @@ This site uses [al-folio](https://github.com/alshedivat/al-folio). Its source is
 
 ## Publishing
 
-The site is published at https://alexanderzdu.github.io/ from the `alexanderzdu.github.io` repository. Push changes to `main` to run `.github/workflows/deploy.yml`, which builds the site and publishes the `gh-pages` branch. GitHub Pages serves that branch from its root.
+The site will be available at https://alexanderzdu.github.io/ from the `alexanderzdu.github.io` repository. Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. Push changes to `main` to run `.github/workflows/deploy.yml`, which builds and deploys the site.
 
 To update the published CV after changing the CV repository, advance the submodule pointer in this repository and push the site commit. A push to the CV repository alone does not change the site's pinned CV version.
 
